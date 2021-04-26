@@ -1,5 +1,5 @@
 // need openweathermap.org api key to access application
-const key = 'b75d3d431eb7cda973e4e1267ab9aa61'
+const key = `loremipsum`// ADD OWN API KEY HERE
 
 // function to get data from api
 // declare variables to hold data from api
