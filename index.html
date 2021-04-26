@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/main.js" defer></script>
+<title>Weather API Project</title>
+</head>
+<body>
+
+    <div class="background">
+        <p>Photo By: Peter Nguyen</p>
+    <div class="col-12 col-md-12" id="header">
+        <div class="row">
+            <h1>
+                Weather API: <br> The only page you need for today's forecast!
+            </h1>
+            <h2>
+                --Start by entering a city to check the current weather--
+            </h2>
+        </div>
+    </div>
+
+    <form name="testData" id="form">
+        <label for="first-name" id="label">Please Enter City Name:</label>
+        <input type="text" name="city" id="city" placeholder="ie. Los Angeles">
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+
+    <section class="col-12 col-md-12">
+        <div class="row">
+            <div class="list-group data-list">
+                <button type="button" id="clearButton" onclick="clear_data()">Clear All Data</button>
+                <table class="table table-dark" id="data_table">
+                    <thead>
+                      <tr>
+                        <th scope="col" id="table_city">City</th>
+                        <th scope="col">RealFeel Temperature (°F)</th>
+                        <th scope="col">High (°F)</th>
+                        <th scope="col">Low (°F)</th>
+                        <th scope="col">Weather Conditions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+    </section>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
